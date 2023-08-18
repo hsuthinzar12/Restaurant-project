@@ -1,0 +1,1582 @@
+@import url(../css/style_black.css);
+
+/*=================animations=================*/
+@keyframes transitionIN {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transoform: translateX(0px);
+    }
+}
+
+.box {
+    text-align: center;
+}
+
+.mvdbox {
+    animation: transitionIN 1s;
+}
+
+#copy {
+    display: inline;
+}
+
+.copy {
+    text-align: center;
+}
+
+.txteffect,
+.menuicon,
+.menucontainer,
+.menuh1,
+.experienceheader,
+.experience,
+.chefheader,
+.main {
+    animation: transitionIn 3s;
+}
+
+/*=================menu=================*/
+.mvdbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 110px;
+}
+
+/*===========start of media queries==============*/
+@media only screen and (max-width:300px) {
+    .menuimg {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    .menutxt {
+        word-spacing: 20px;
+        line-height: 200px;
+        font-size: 50px;
+    }
+
+    .headtxt {
+        font-size: 3rem;
+        top: 90%;
+    }
+
+    .menuicon {
+        line-height: 8vh;
+    }
+
+    .micn {
+        width: 20vw;
+        margin: 4px;
+    }
+
+    #boxes {
+        width: 30vw;
+        margin: 3px;
+    }
+
+    .mvdbox video {
+        height: 50vh;
+    }
+
+    .menubox h5,
+    h6 {
+        font-size: 9rem;
+    }
+
+
+
+    .experiencebox h3 {
+        font-size: 1rem;
+    }
+
+    .chefimg img {
+        width: 40vw;
+    }
+
+    .experienceheader h1,
+    .chefheader h1,
+    .hotmenu h1 .servicetxt h1 {
+        font: 350 4em/1 "Oswald", sans-serif;
+    }
+
+    .popup h2 {
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main_content {
+        flex-direction: column-reverse;
+    }
+
+    .main_text {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .menuimg {
+        width: 70vw;
+        height: 50vh;
+    }
+
+
+    #boxes {
+        width: 20vw;
+        margin: 3px;
+    }
+
+    .mvdbox video {
+        height: 50vh;
+    }
+
+    .chefimg img {
+        width: 50vw;
+        margin-left: 30%;
+    }
+
+    .experienceheader h1,
+    .chefheader h1,
+    .hotmenu h1 {
+        font: 600 4em/1 "Oswald", sans-serif;
+    }
+
+    .hotmenutabs {
+        width: 150vw;
+    }
+
+    .hotmenurows a img {
+        width: 30vw;
+    }
+
+    .popup h2 {
+        font-size: 1rem;
+    }
+
+    .popup .content img {
+        width: 20vw;
+    }
+
+    .popup {
+        width: 40%;
+    }
+
+    .cart-table.active {
+        left: -17%;
+    }
+
+    .cart-table {
+        width: 80vw;
+        margin-left: 20%;
+        height: 500px;
+        margin-bottom: 9rem;
+    }
+
+    .menuimgbox button {
+        margin-left: -20%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .menuimg {
+        width: 80vw;
+        height: 80vh;
+    }
+
+
+    #boxes {
+        width: 20vw;
+        margin: 5px;
+    }
+
+    .menuimgbox button {
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main_content {
+        flex-direction: column-reverse;
+    }
+
+    .main_text {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .main_img img {
+        padding-top: 20%;
+    }
+
+    .menuimg {
+        width: 90vw;
+        height: 90vh;
+    }
+
+
+    #boxes {
+        width: 40vw;
+    }
+
+    .popup {
+        width: 27%;
+    }
+
+    .menuimgbox button {
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .menuimg {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .topmenu:hover .menuoverlay {
+        width: 120vw;
+    }
+
+
+    #boxes {
+        width: 20vw;
+        margin: 8px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .mvdbox {
+        padding: 100px 50px;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .chefimg img {
+        width: 18vw;
+    }
+
+    .popup {
+        width: 27%;
+    }
+
+    .menuimgbox button {
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    #boxes {
+        width: 18vw;
+    }
+
+    .icntxt {
+        margin-left: 28%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4vh;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .experiencebox h3 {
+        font-size: 1.5rem;
+    }
+
+    .chefcard img {
+        width: 10vw;
+        border-radius: 50px;
+    }
+
+    .chefimg img {
+        width: 20vw;
+    }
+
+    .experienceheader h1,
+    .chefheader h1,
+    .hotmenu h1 {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+
+    .hotmenutabs {
+        width: 450vw;
+    }
+
+    .hotmenurows {
+        margin-left: 1%;
+    }
+
+    .hotmenurows a img {
+        width: 20vw;
+    }
+
+    .hotmenutxt {
+        font-size: 2rem;
+    }
+
+    .popup .content img {
+        width: 29vw;
+    }
+
+    .popup h1 {
+        font-size: 1.5rem;
+    }
+
+    .close-btn {
+        width: 2rem;
+        margin-left: 30%;
+    }
+
+    .popup {
+        width: 30%;
+    }
+
+    .cart-table.active {
+        right: 37%;
+    }
+
+    .cart-table {
+        margin-top: 1rem;
+        width: 360px;
+        height: 600px;
+    }
+
+    .menuimgbox button {
+        margin-left: 33%;
+    }
+}
+
+/*================background video box=================*/
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main_img {
+    width: 500px;
+    height: 400px;
+}
+
+.main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main_text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+    width: 100%;
+}
+
+.main_text h1 {
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    margin: 15px 0px;
+    color: #d62828;
+    animation: transition 2s;
+}
+
+.main_text p {
+    color: #fff;
+    animation: transition 4s;
+}
+
+.main_text a {
+    font-family: 'Anek Devanagari';
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background: #fff;
+    font-family: 'Ubuntu';
+    text-decoration: none;
+    animation: transition 6s;
+}
+
+.main_text a:hover {
+    background-color: #d62828;
+    color: #fff;
+}
+
+/*==============end of media queries===========*/
+.menuicon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.micn {
+    width: 15vw;
+    margin: 10px;
+    position: relative;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0;
+    gap: 5%;
+}
+
+.micn:hover {
+    animation: shake 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.sushi,
+.sides,
+.soup,
+.dessert {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.menuh1 {
+    text-align: center;
+    margin: 2%;
+    font-family: 'Josefin Sans';
+    color: #fff;
+    transition: background-position-x 0.9s linear;
+}
+
+.shadow {
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+        -3px -3px 0 #222,
+        3px -3px 0 #222,
+        -3px 3px 0 #222,
+        3px 3px 0 #222,
+        4px 4px 0 #fff,
+        5px 5px 0 #fff,
+        6px 6px 0 #fff,
+        7px 7px 0 #fff;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.text1 {
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+.menubox h5,
+h6 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    top: 0.1;
+    font-family: 'Josefin Sans';
+}
+
+.menubox {
+    position: relative;
+    border-radius: 15px;
+    line-height: 8vh;
+    margin: 10px;
+    color: #fff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.menubox:hover {
+    opacity: 2px;
+}
+
+/*
+#boxes {
+    border-radius: 30% 70% 62% 38% / 35% 39% 61% 65%;
+
+}*/
+.menuimgbox {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carticn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cartbtn {
+    border-left: .1rem solid #d62828;
+    border-right: .1rem solid #d62828;
+    width: 100%;
+    color: #fff;
+}
+
+#heart {
+    color: #fff;
+}
+
+.menuimgbox:hover a img {
+    transform: scale(1.1);
+}
+
+.menuimgbox .carticn {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+
+    margin-left: 0.1%;
+}
+
+.menuimgbox:hover .carticn {
+    bottom: 0;
+}
+
+.menuimgbox #boxes .carticn a {
+    height: 3rem;
+    line-height: 1rem;
+    font-size: 2rem;
+    width: 30%;
+}
+
+
+.experienceheader h1,
+.chefheader h1,
+.cusreview h1,
+.hotmenu h1,
+.servicetxt h1,
+.blog h1,
+.blogtxt i {
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 9vh;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+
+    /* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.cusreview {
+    font-family: 'Ubuntu';
+}
+
+.experiencebox {
+    color: #fff;
+    text-align: center;
+}
+
+.experiencebox h3 {
+    font-family: 'Ubuntu';
+    color: #d62828;
+}
+
+.chefheader {
+    margin-top: 3%;
+}
+
+.experiencebox p {
+    font-family: 'Anek Devanagari';
+}
+
+.popup-btn {
+    z-index: 2;
+    color: #fff;
+    background: #555;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*===========================Chef Card=========================*/
+
+.chefcolumn {
+    width: 20vw;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+.chefbox {
+    margin-left: 9.5%;
+}
+
+.chefcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chefimg img {
+    border-radius: 50px;
+}
+
+/*====================special menu====================*/
+.line {
+    width: 30vw;
+    margin-top: 5%;
+}
+
+.left,
+.right {
+    width: 30vw;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.left {
+    color: pink;
+    transform: skew(0deg, -15deg);
+}
+
+.right {
+    color: white;
+    transform: skew(0deg, 15deg);
+}
+
+.left .content {
+    width: 30vw;
+    text-align: center;
+}
+
+.right .content {
+    width: 30vw;
+    text-align: left;
+    transform: translate(-50vw);
+}
+
+span {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 0.50vh;
+    transition: ease-out .9s;
+}
+
+/*============================Special Menu=============================*/
+.hotmenutabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+
+.hotmenutxt {
+    margin-top: 5%;
+    color: #d62828;
+    line-height: 5vh;
+    font-family: 'Anek Devanagari';
+    text-align: center;
+}
+
+/*==============================Cus Review============================*/
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.review .box-container .box .stars i {
+    color: var(--pink);
+    font-size: 1rem;
+    color: #f9d71c;
+}
+
+.review .box-container p {
+    color: #999;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.review .box-container .box .user span {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+/*================================Product Preview=========================================*/
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Anek Devanagari';
+    text-align: right;
+    display: inline;
+}
+
+.overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #d62828;
+    border-radius: 5px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .content {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup h2 {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Ubuntu';
+
+}
+
+.popup h1 {
+    margin-bottom: 3%;
+    font-family: 'Ubuntu';
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.popup p {
+    font-family: 'Ubuntu';
+    line-height: 2;
+}
+
+/*===============================================================================*/
+.chef_container {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    margin: 30px auto;
+    gap: 10%;
+}
+
+.chef_box:hover {
+    background-color: #999;
+}
+
+.chef_box {
+
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+}
+
+.chef_box:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+
+.chef_box img {
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+.chef_box h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000;
+}
+
+.chef_box p {
+    text-align: center;
+    color: #000;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+.chef_box p {
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+@media (max-width: 800px) {
+    .chef_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .chef_container {
+        width: 85%;
+        display: block;
+    }
+
+    .chef_box {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .chef_box img {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+/*======================================*/
+.popular_container {
+    padding-top: 4rem;
+    grid-template-columns: 250px;
+    justify-content: center;
+    row-gap: 5.5rem;
+}
+
+.popular_card {
+    position: relative;
+    padding: 7rem 2rem 1.5rem;
+    box-shadow: 0 8px 20px hsla(19, 64%, 48%, .08);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.popular_img {
+    width: 220px;
+    position: absolute;
+    inset: 0;
+    top: -2.5rem;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+
+.popular_name {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu';
+    margin-bottom: .25rem;
+}
+
+.popular-description {
+    display: block;
+    font-size: smaller;
+    margin-bottom: 1rem;
+}
+
+.popular_price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.popular_btn {
+    display: flex;
+    background-color: #ccc;
+    padding: 6px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 20px hsla(19, 64%, 20%, .2);
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+/*=================================================*/
+.servicetxt {
+    font-size: 3rem;
+    font-family: 'Anek Devanagari';
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.services-grid a {
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Ubuntu';
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+}
+
+.services-grid p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Anek Devanagari';
+    line-height: 1.5;
+}
+
+.servicemain {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.services-grid h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.825rem;
+    margin: 1.3rem 0;
+}
+
+.section-lead {
+    max-width: 600px;
+    margin: 1rem auto 1.5rem;
+}
+
+.service a {
+    color: #5b7abb;
+    display: block;
+}
+
+.service h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 1.3rem;
+    margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.service {
+    background: #d62828;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #e7e7e7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    transition: transform .2s;
+}
+
+.service:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+    font-size: 3.45rem;
+    margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4,
+.service1 .cta {
+    color: #fff;
+}
+
+.service1:hover {
+    border: 2px solid #fff;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.service2 i,
+.service2 h4,
+.service2 .cta {
+    color: #fff;
+}
+
+.service2:hover {
+    border: 2px solid #fff;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.service3 i,
+.service3 h4,
+.service3 .cta {
+    color: #fff;
+}
+
+.service3:hover {
+    border: 2px solid #fff;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.service .cta span {
+    font-size: 0.6rem;
+}
+
+.service>* {
+    flex: 1 1 100%;
+}
+
+.service .cta {
+    align-self: flex-end;
+}
+
+@media all and (max-width:900px) {
+    .services-grid {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
+
+/*===========Fresh Ingredient===============*/
+.freshheader {
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+}
+
+.freshheader h1 {
+    font-size: 2rem;
+    line-height: 2;
+    font-family: 'Ubuntu';
+}
+
+.freshheader h2 {
+    font-size: 1rem;
+    color: #d62828;
+    font-family: 'Ubuntu';
+}
+
+.freshtabs {
+    margin-top: 2%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.freshbox {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.freshbox h2 {
+    color: #d62828;
+    font-family: 'Ubuntu';
+    line-height: 2;
+}
+
+.freshimg {
+    color: #fff;
+    background-color: #fff;
+}
+
+.freshicn {
+    width: 4vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/*====================Blog and events===============*/
+.blogtabs {
+    margin-top: 4%;
+    display: flex;
+    gap: 10%;
+    margin-left: 2%;
+}
+
+.blog {
+    margin-top: 4%;
+}
+
+.blog h1 {
+    color: #d62828;
+    text-align: center;
+    font-family: 'Ubuntu';
+    letter-spacing: 8%;
+
+}
+
+.blogrows {
+    width: 25vw;
+    transition: 0.9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.blogrows img {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.blogtxt {
+    color: #fff;
+}
+
+.blogtxt h5 {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Ubuntu';
+    line-height: 1;
+    color: #d62828;
+}
+
+.blogtxt p {
+    margin-top: 4%;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*shopping cart style*/
+.shopping_container {
+    margin-top: 4.3%;
+    cursor: pointer;
+}
+
+#cart-icon {
+    color: #e7e7e7;
+    font-size: 2rem;
+}
+
+.cart-table {
+    position: fixed;
+    top: 12%;
+    bottom: 50%;
+    right: -100%;
+    padding: 20px;
+    background-color: #a00808;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    z-index: 1000;
+    transition: 0.7s ease-in-out;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+    display: flex;
+    color: #fff;
+    font-family: 'Ubuntu';
+    justify-content: center;
+}
+
+.cart-content {
+    overflow: scroll;
+    height: 500px;
+}
+
+.buy-box {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #a00808;
+    margin-left: -20px;
+    margin-top: -20px;
+    padding-right: 10px;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.cart-img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 600;
+}
+
+.cart-quantity {
+    border: 1px solid black;
+    outline-color: #bbbbbb;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.cart-remove:hover {
+    color: red;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px dashed #fff;
+    color: #fff;
+    font-family: 'Ubuntu';
+}
+
+.total-title {
+    font: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #000;
+    color: white;
+    border-radius: 8%;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-div a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-buy:hover {
+    background: black;
+}
+
+#close-cart {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.85rem;
+    font-size: 1.5rem;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+#close-cart:hover {
+    color: black;
+}
+
+/*=====================================================*/
+.menuimgbox button {
+    font-size: 2rem;
+    margin-top: -10%;
+    position: absolute;
+    cursor: pointer;
+    color: #e7e7e7;
+    background-color: #000;
+}
+
+.product_price {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu';
+    text-align: left;
+    line-height: 1;
+}
+
+/*================Order Food=================*/
+.order_header {
+    color: #d62828;
+    line-height: 4;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+.order_header a{
+    border:#fff;
+    text-decoration: none;
+    color: #d62828;
+    line-height: 4;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+.orderli {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 28%;
+}
+
+.orderli input,
+select {
+    width: 20vw;
+    height: 5vh;
+}
+
+.find_menu {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.order_signin {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.ordertabs a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 43%;
+    line-height: 3;
+    font-family: 'Ubuntu';
+}
+
+.ordertabs a:hover {
+    color: #d62828;
+}

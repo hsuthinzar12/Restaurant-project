@@ -1,0 +1,89 @@
+@import url(../css/style_black.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main_profile_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+}
+
+.profile_div {
+    padding: 2rem 0;
+}
+
+.default_profile {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.default_profile img{
+    width: 200px;
+}
+
+.deft_pro_text {
+    text-align: center;
+}
+
+.deft_pro_text span {
+    font-family: "Ubuntu";
+    color: #d62828;
+    font-size: 3rem;
+}
+
+.deft_pro_text a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.deft_pro_text a:hover{
+    color: #d62828;
+}
+
+.user_table {
+    color: white;
+    margin: auto;
+    padding: 15px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* border-collapse: collapse; */
+    border-color: #d62828;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.user_table td,th {
+    padding: 5px;
+}
+
+@media (max-width:1100px) {
+    .main_profile_div {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 1000px){
+        .main_profile_div {
+            margin-top: 7rem;
+        }
+    }
+    
+    @media (max-width:700px){
+        .user_table {
+            border-collapse: collapse;
+        }
+        .table_div {
+            overflow-x: scroll;
+        }
+    }
+}

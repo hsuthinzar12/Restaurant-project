@@ -1,0 +1,328 @@
+@import url(../css/Menu.css);
+
+#eventheader-img {
+  width: 50%;
+}
+
+@media only screen and (max-width:600px) {
+  .eventheader img {
+    /* width: 100vw;
+    height: 60vh; */
+    margin-top: 10%;
+    font-size: 1rem;
+  }
+
+  .eventtxt2 {
+    margin-top: 6%;
+  }
+
+  .sushidining {
+    width: 45vw;
+    margin-left: 27%;
+  }
+  .card-container{
+    width: 50px;
+  }
+  .booking a{
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .eventheader img {
+    /* width: 100vw; */
+    /* height: 60vh; */
+    margin-top: 30%;
+    font-size: 1rem;
+  }
+
+  .eventtxt2 {
+    margin-top: 6%;
+  }
+
+  .sushidining {
+    width: 45vw;
+    margin-left: 27%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .card-container{
+    width: 50px;
+  }
+  .booking a{
+    margin-left: 25%;
+  }
+}
+
+
+
+@media only screen and (min-width:1400px) {
+  .eventheader img {
+    /* width: 100vw;
+    height: 100vh; */
+  }
+
+  .eventheadertxt {
+    font-size: 3rem;
+  }
+
+  .eventtxt2 {
+    margin-top: 4%;
+  }
+
+  .sushidining {
+    width: 30vw;
+    margin-left: 35%;
+  }
+  .card-container{
+    width: 500px;
+  }
+.booking a{
+  margin-left: 43%;
+}
+}
+
+.eventheadertxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Ubuntu';
+  letter-spacing: 10px;
+}
+
+.eventheadertxt::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.eventheadertxt:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.eventheadertxt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #d62828;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.eventtxt {
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  width: 50vw;
+  margin-left: 25%;
+}
+
+.eventtxt h1 {
+  color: #d62828;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: 'Ubuntu';
+}
+
+.eventtxt p {
+  font-size: 1.5rem;
+  font-family: 'Ubuntu';
+  line-height: 2;
+  margin-top: 3%;
+}
+
+.line {
+  width: 50%;
+  margin-left: 25%;
+  top: 3%;
+}
+
+.sushidining {
+  height: 30vh;
+}
+
+.maindining {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.diningtab {
+  margin-left: 13%;
+  width: 30vw;
+  border: 3px solid #d62828;
+}
+
+.diningtab img {
+  width: 30vw;
+}
+
+.diningtab h3 {
+  color: #d62828;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+}
+
+.diningtab p {
+  color: #fff;
+  margin-top: 2%;
+  font-family: 'Anek Devanagari';
+  line-height: 2;
+  text-align: center;
+}
+
+.diningtab h4 {
+  margin-top: 2%;
+  font-family: 'Ubuntu';
+  text-align: center;
+  color: #d62828;
+  line-height: 3;
+}
+
+.booking {
+  margin: 5% 13% 0% 13%;
+
+}
+
+.booking h1 {
+  color: #d62828;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Ubuntu';
+}
+
+.booking p {
+  color: #fff;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-family: 'Ubuntu';
+}
+
+.booking a {
+  line-height: 3;
+  text-decoration: none;
+  color: #d62828;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+
+/*==============================================*/
+.eventfooter {
+  text-align: center;
+  color: #fff;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.eventfooter {
+  margin-top: 2%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.eftabs {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  line-height: 1.9;
+  font-family: 'Ubuntu';
+}
+
+button {
+  cursor: pointer;
+}
+
+.eftabs h2 {
+  color: #d62828;
+  font-family: 'Ubuntu';
+  line-height: 2;
+  cursor: pointer;
+}
+
+.eftabs p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footericon {
+  width: 4vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+/*=================upcomning event=================*/
+.upcomingeventheader h1{
+color: #d62828;
+font-size: 2rem;
+font-family: 'Ubuntu';
+text-align: center;
+line-height: 4;
+margin-top: 2%;
+}
+.photo-container {
+  font-size: 1.5em;
+  background-color: #d62828;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  margin: 10px;
+  font-family: 'Ubuntu';
+  margin-left: 32.6%;
+  display: grid;
+  grid-template-areas:
+    'photo info';
+  grid-template-columns: 150px 1fr;
+  background-color: #ffffff;
+  line-height: 1.75em;
+}
+.info-container {
+  padding: 20px;
+  grid-area: info;
+}
+
+.event-name {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.event-location {
+  font-weight: 300;
+}
+
+.day {
+  font-weight: 300;
+}
+
+.month {
+  font-weight: 600;
+}
+
+@media(max-width: 600px) {
+  .card-container {
+    width: 90%;
+  }
+}
